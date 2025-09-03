@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header, footer {
+      text-align: center;
+      padding: 10px;
+      background: #4CAF50;
+      color: white;
+      border-radius: 6px;
+    }
+    main {
+      margin-top: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #888;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+    }
+    ul {
+      list-style-type: square;
+      margin-top: 15px;
+    }
+    video {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Form</h1>
+    <p>Well-structured, accessible, and validated form</p>
+  </header>
+
+  <main>
+    <!-- Informational List -->
+    <section>
+      <h2>Steps to Complete Registration</h2>
+      <ul>
+        <li>Fill in personal details</li>
+        <li>Provide account information</li>
+        <li>Review and submit</li>
+      </ul>
+    </section>
+
+    <!-- Table Example -->
+    <section>
+      <h2>Available Plans</h2>
+      <table>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Features</th>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>$10</td>
+          <td>1GB Storage</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>$20</td>
+          <td>10GB Storage</td>
+        </tr>
+        <tr>
+          <td>Premium</td>
+          <td>$30</td>
+          <td>Unlimited Storage</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Media Example -->
+    <section>
+      <h2>Welcome Video</h2>
+      <video controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="At least 6 characters" minlength="6" required>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="plan">Choose a Plan:</label>
+          <select id="plan" name="plan" required>
+            <option value="">--Select--</option>
+            <option value="basic">Basic</option>
+            <option value="pro">Pro</option>
+            <option value="premium">Premium</option>
+          </select>
+
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" required> Male
+          <input type="radio" id="female" name="gender" value="female"> Female
+          <input type="radio" id="other" name="gender" value="other"> Other
+
+          <label for="newsletter">Subscribe to Newsletter:</label>
+          <input type="checkbox" id="newsletter" name="newsletter" checked>
+        </fieldset>
+
+        <fieldset>
+          <legend>Extra Information</legend>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+          <label for="readonly-field">Referral Code (Read-only):</label>
+          <input type="text" id="readonly-field" value="REF12345" readonly>
+        </fieldset>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced Form Project | Designed by phkim powerlean org</p>
+  </footer>
+
+</body>
+</html>
